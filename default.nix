@@ -3,7 +3,9 @@
 # >rix(r_ver = "https://github.com/NixOS/nixpkgs/archive/3305b2b25e4ae4baee872346eae133cf6f611783.tar.gz",
 #  > r_pkgs = c("targets",
 #  > "dplyr",
-#  > "ggplot2"),
+#  > "ggplot2",
+#  > "readr",
+#  > "here"),
 #  > system_pkgs = NULL,
 #  > git_pkgs = NULL,
 #  > project_path = ".",
@@ -15,7 +17,7 @@
 let
  pkgs = import (fetchTarball "https://github.com/NixOS/nixpkgs/archive/3305b2b25e4ae4baee872346eae133cf6f611783.tar.gz") {};
  rpkgs = builtins.attrValues {
-  inherit (pkgs.rPackages) targets dplyr ggplot2;
+  inherit (pkgs.rPackages) targets dplyr ggplot2 readr here;
 };
    system_packages = builtins.attrValues {
   inherit (pkgs) R glibcLocales nix;

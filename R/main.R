@@ -11,3 +11,7 @@ plot_data <- function(data) {
   	ggplot(aes(x = `Sepal.Width`, y = `Sepal.Length`, color = Species))	+
   	  geom_point()
 }
+
+export_plot <- function(plot) {
+  ggplot2::ggsave("plots/plot.png", plot)
+}

@@ -1,6 +1,7 @@
 library(readr)
+library(dplyr)
 library(here)
 
-data <- data(iris)
+data(iris)
 
-write_csv(data, here("data/data.csv"))
+write_csv(iris, here("data/data.csv"))
