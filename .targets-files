@@ -1,0 +1,8 @@
+.targets-files
+_targets/meta/process
+_targets/meta/progress
+_targets/objects/data
+_targets/objects/export
+_targets/objects/plot
+plots/plot.png
+_targets/meta/meta

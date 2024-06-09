@@ -1,0 +1,9 @@
+name|type|parent|branches|progress
+file|stem|file|0|dispatched
+file|stem|file|0|completed
+data|stem|data|0|dispatched
+data|stem|data|0|completed
+plot|stem|plot|0|dispatched
+plot|stem|plot|0|completed
+export|stem|export|0|dispatched
+export|stem|export|0|completed
