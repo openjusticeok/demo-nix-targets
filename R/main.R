@@ -13,5 +13,5 @@ plot_data <- function(data) {
 }
 
 export_plot <- function(plot) {
-  ggplot2::ggsave("plots/plot.png", plot)
+  ggplot2::ggsave("plots/plot.png", plot, create.dir = TRUE)
 }
